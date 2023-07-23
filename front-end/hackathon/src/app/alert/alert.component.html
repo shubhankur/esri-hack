@@ -1,0 +1,27 @@
+<mat-card class="custom-card title1">
+    <mat-card-content style="text-align: center;">
+        <form (ngSubmit)="onSubmit()">
+            <div class="rating-container">
+              <mat-form-field>
+                <mat-label>Select State</mat-label>
+                <mat-select [(ngModel)]="selectedState" (selectionChange)="onStateChange()" name="state">
+                  <mat-option *ngFor="let state of states" [value]="state">{{ state }}</mat-option>
+                </mat-select>
+              </mat-form-field><br>
+          
+              <mat-form-field *ngIf="counties">
+                <mat-label >Select County</mat-label>
+                <mat-select [(ngModel)]="selectedCounty" name="county">
+                  <mat-option *ngFor="let county of counties" [value]="county">{{ county }}</mat-option>
+                </mat-select>
+              </mat-form-field><br><br>
+            
+      <mat-label class="title2">Level</mat-label><br><br>
+      <textarea matInput [(ngModel)]="level" name="level" rows="4" required style="box-shadow: 100px; border-color: black;border-radius: 5px;"></textarea><br><br>
+      <mat-label class="title2">Details</mat-label><br><br>
+      <textarea matInput [(ngModel)]="details" name="details" rows="4" required style="box-shadow: 100px; border-color: black;border-radius: 5px;"></textarea><br><br>
+      <button mat-raised-button color="accent" type="submit">Submit</button>
+    </div>
+    </form>
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,9 @@
+.esri-icon-font-fallback-text{
+    background-color: aqua;
+}
+
+.custom-card {
+    margin: 10px;
+    color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.2); /* 80% transparent white background */
+  }

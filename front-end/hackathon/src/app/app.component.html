@@ -1,0 +1,21 @@
+
+<mat-toolbar color="primary">
+  <img src="../favicon.ico" alt="Logo" height="40" width="40">
+  <span style="padding: 10px;">Pio-<i>near</i></span>
+  <span class="example-spacer"></span>
+  <section>
+    <div class="example-button-row">
+      <button mat-flat-button color="accent" (click)="goToSubscribePage()">Subscribe</button>
+    </div>
+  </section>
+  <button mat-icon-button class="example-icon home-icon" (click)="goToAlertPage()" aria-label="Example icon-button with home icon">
+    <mat-icon>add_alert</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon home-icon" (click)="goToReviewPage()" aria-label="Example icon-button with home icon">
+    <mat-icon> rate_review</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon home-icon" (click)="goToHomePage()" aria-label="Example icon-button with home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>

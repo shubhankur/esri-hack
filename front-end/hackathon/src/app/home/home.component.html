@@ -1,0 +1,47 @@
+<mat-card class="custom-card">
+    <mat-card-content style="text-align: center;">
+  <div class="title1">GET STARTED ON CHOOSING YOUR NEXT DESTINATION</div>
+  
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <mat-form-field>
+        <mat-label>Select State</mat-label>
+        <mat-select [(ngModel)]="selectedState" name="selectedState">
+          <mat-option *ngFor="let state of states" [value]="state">{{ state }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  
+    <div>
+      <label style="color:white; font-size: 20px; font-family: 'avenir'">Select Parameters</label><br><br>
+      <mat-form-field>
+        <mat-label >Parameter 1</mat-label>
+        <mat-select [(ngModel)]="parameter1" name="parameter1">
+          <mat-option value="safety">Safety</mat-option>
+          <mat-option value="transit">Public Transport</mat-option>
+          <mat-option value="hospital">Hosiptals</mat-option>
+        </mat-select>
+      </mat-form-field><br>
+    
+      <mat-form-field>
+        <mat-label>Parameter 2</mat-label>
+        <mat-select [(ngModel)]="parameter2" name="parameter2">
+            <mat-option value="safety">Safety</mat-option>
+            <mat-option value="transit">Public Transport</mat-option>
+            <mat-option value="hospital">Hosiptals</mat-option>
+        </mat-select>
+      </mat-form-field><br>
+
+      <mat-form-field>
+        <mat-label>Parameter 3</mat-label>
+        <mat-select [(ngModel)]="parameter3" name="parameter3">
+            <mat-option value="safety">Safety</mat-option>
+            <mat-option value="transit">Public Transport</mat-option>
+            <mat-option value="hospital">Hospitals</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="accent" type="submit">Submit</button>
+  </form>
+  </mat-card-content>
+  </mat-card>
