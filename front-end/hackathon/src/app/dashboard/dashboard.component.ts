@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { loadModules } from 'esri-loader';
 import { ApiServiceService } from '../api.service.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DialogComponent } from '../dialog/dialog.component';
 import { DataService } from '../data.service';
 
 export interface TableData {

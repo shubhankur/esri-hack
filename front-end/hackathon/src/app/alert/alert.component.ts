@@ -12,7 +12,7 @@ import { County } from '../county.model';
 })
 export class AlertComponent {
 
-  constructor(private dataService: ApiServiceService,private router: Router,private dataService2: DataService, private http: HttpClient) {}
+  constructor(private dataService: ApiServiceService,private router: Router,private dataService2: DataService, private http: HttpClient ) {}
   ngOnInit(): void{
     this.onStateChange();
   }
@@ -42,9 +42,8 @@ export class AlertComponent {
     .subscribe(
       (response) => {
         console.log('API Response:', response);
-        this.router.navigate(['/home']);
-        // Handle the API response as needed
-      },
+          this.router.navigate(['/home']);
+        },
       (error) => {
         console.error('Error:', error);
       }

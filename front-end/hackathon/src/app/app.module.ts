@@ -14,7 +14,6 @@ import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReviewComponent } from './review/review.component';
-import { DialogComponent } from './dialog/dialog.component';
 import { MatTableModule } from '@angular/material/table';
 import { CountyDetailsComponent } from './county-details/county-details.component';
 import { AlertComponent } from './alert/alert.component';
